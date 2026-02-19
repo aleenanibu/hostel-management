@@ -1,0 +1,129 @@
+/* Background Container */
+.home-container {
+  display: flex;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    ),
+    url("/campus.jpg") center/cover no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LEFT SIDE */
+.home-left {
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 60px;
+}
+
+.home-left h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home-left p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Features */
+.features {
+  margin-top: 20px;
+}
+
+.features p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+/* RIGHT SIDE */
+.home-right {
+  width: 40%;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Card */
+.login-card {
+  background: rgba(255,255,255,0.9);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.login-card h2 {
+  margin-bottom: 10px;
+}
+
+/* Description */
+.portal-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #5b21b6
+  );
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(124,58,237,0.4);
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .home-right {
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .home-left {
+    justify-content: center;
+    text-align: center;
+  }
+}

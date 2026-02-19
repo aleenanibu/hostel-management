@@ -1,0 +1,110 @@
+/* Background */
+.warden-login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Card */
+.login-card {
+  background: white;              /* readable */
+  padding: 40px;
+  border-radius: 18px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* Logo */
+.logo {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.login-card h2 {
+  margin-bottom: 5px;
+  color: #111;
+}
+
+.login-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+.input-group span {
+  margin-right: 10px;
+}
+
+/* Inputs */
+.input-group input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #111;          /* dark text */
+  width: 100%;
+  font-size: 14px;
+}
+
+.input-group input::placeholder {
+  color: #666;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #5b21b6
+  );
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Back Link */
+.back-home {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: underline;
+  color: #555;
+}
+
+.back-home:hover {
+  color: #000;
+}
